@@ -14729,7 +14729,7 @@ f(x ; \alpha, \beta) &amp; =\frac{x^{\alpha-1}(1-x)^{\beta-1}}{\int_0^1 u^{\alph
 &amp; =\frac{1}{\mathrm{~B}(\alpha, \beta)} x^{\alpha-1}(1-x)^{\beta-1}
 \end{aligned}
 $$</p>
-<p>原理上应该是趋于正态分布，故首先怀疑是实验循环采样次数不够，考虑到算力问题，用1D问题示例（降低问题复杂度，辅助收敛）</p>
+<p>原理上应该是趋于正态分布，故首先怀疑是实验循环采样次数不够，考虑到算力问题，用1D问题示例,步长为1，步数100（降低问题复杂度，辅助收敛）</p>
 
 </div>
 </div>
@@ -14784,7 +14784,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>如果观察首位距离随着游走时间增加的变化呢？
-看起来没有什么规律,忽上忽下</p>
+看起来没有什么规律,忽上忽下(步长为1，步数100)</p>
 
 </div>
 </div>
@@ -14850,7 +14850,7 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="%E5%A4%9A%E6%AC%A1%E6%B8%B8%E8%B5%B0">&#22810;&#27425;&#28216;&#36208;<a class="anchor-link" href="#%E5%A4%9A%E6%AC%A1%E6%B8%B8%E8%B5%B0">&#182;</a></h2><p>如果我们在同一步长和步数的条件下做多次游走，把每次轨迹的end to end 距离trajectory数据平均起来呢？
-我们可以发现，正如之前推导的，函数逐渐收敛至：
+我们可以发现，正如之前推导的，函数逐渐收敛至：(步长为1，步数10000)
 $$|z|_{\mathrm{rms}}=A\sqrt{N}+B$$</p>
 
 </div>
